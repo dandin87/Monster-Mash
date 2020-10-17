@@ -85,12 +85,14 @@ public class MiniWardenEntity extends PiglinEntity implements IAnimatedEntity {
 		this.inventory.readTags(tag.getList("Inventory", 10));
 	}
 
+	public boolean shouldZombify() {
+		return false;
+	}
+
 	public void writeCustomDataToTag(CompoundTag tag) {
 		super.writeCustomDataToTag(tag);
-		if (this.isImmuneToZombification()) {
-			tag.putBoolean("IsImmuneToZombification", true);
-		}
-		tag.putInt("TimeInOverworld", this.timeInOverworld);
+		tag.putBoolean("IsImmuneToZombification", true);
+		tag.put("Inventory", this.inventory.getTags());
 	}
 
 	protected ItemStack addItem(ItemStack stack) {

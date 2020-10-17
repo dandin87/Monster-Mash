@@ -48,15 +48,16 @@ public class PumpkinCarvesYouEntity extends MonsterMashEntity implements IAnimat
 
 	private <E extends Entity> boolean animationPredicate(AnimationTestEvent<E> event) {
 		if (this.dataTracker.get(SHOOTING)){
-			System.out.println("Attacking");
+			//System.out.println("Attacking");
 			controller.setAnimation(new AnimationBuilder().addAnimation("attack", true));
 			return true;
 		}
 		if (!(lastLimbDistance > -0.15F && this.lastLimbDistance < 0.15F)) {
-			System.out.println("Walking");
+			//System.out.println("Walking");
 			controller.setAnimation(new AnimationBuilder().addAnimation("walk", true));
 			return true;
 		}
+
 		return false;
 	}
 

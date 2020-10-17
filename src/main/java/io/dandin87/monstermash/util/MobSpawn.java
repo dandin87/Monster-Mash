@@ -18,57 +18,47 @@ public class MobSpawn {
 		for (Biome biome : BuiltinRegistries.BIOME) {
 			if (biome.getCategory().equals(Biome.Category.NETHER)) {
 				addMobSpawnToBiome(biome, SpawnGroup.MONSTER,
-						new SpawnSettings.SpawnEntry(MobEntityRegister.MUNCHMUNCH, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.PUMPKINCARVESYOU, 40, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.MINIWARDEN, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.TWO, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.THREE, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.FOUR, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.FIVE, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.SIX, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.SEVEN, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.EIGHT, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.NINE, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.TEN, 30, 1, 1));
+						new SpawnSettings.SpawnEntry(MobEntityRegister.MUNCHMUNCH, 8, 1, 1),
+						new SpawnSettings.SpawnEntry(MobEntityRegister.PUMPKINCARVESYOU, 4, 1, 1),
+						new SpawnSettings.SpawnEntry(MobEntityRegister.MINIWARDEN, 4, 1, 1),
+						new SpawnSettings.SpawnEntry(MobEntityRegister.FIVE, 8, 1, 1));
 			}
-		}
 
-		for (Biome biome : BuiltinRegistries.BIOME) {
-			if (biome.getCategory().equals(Biome.Category.THEEND)) {
-				addMobSpawnToBiome(biome, SpawnGroup.MONSTER,
-						new SpawnSettings.SpawnEntry(MobEntityRegister.MUNCHMUNCH, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.PUMPKINCARVESYOU, 40, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.MINIWARDEN, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.TWO, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.THREE, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.FOUR, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.FIVE, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.SIX, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.SEVEN, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.EIGHT, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.NINE, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.TEN, 30, 1, 1));
-			}
-		}
+			if (biome.getCategory().equals(Biome.Category.BEACH)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.MUNCHMUNCH, 8, 1, 1)); }
 
-		for (Biome biome : BuiltinRegistries.BIOME) {
-			if (biome.getCategory().equals(Biome.Category.NONE)) {
-				addMobSpawnToBiome(biome, SpawnGroup.MONSTER,
-						new SpawnSettings.SpawnEntry(MobEntityRegister.MUNCHMUNCH, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.PUMPKINCARVESYOU, 40, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.MINIWARDEN, 30, 1, 1),
-						new SpawnSettings.SpawnEntry(MobEntityRegister.TWO, 30, 1, 1),
-				new SpawnSettings.SpawnEntry(MobEntityRegister.THREE, 30, 1, 1),
-				new SpawnSettings.SpawnEntry(MobEntityRegister.FOUR, 30, 1, 1),
-				new SpawnSettings.SpawnEntry(MobEntityRegister.FIVE, 30, 1, 1),
-				new SpawnSettings.SpawnEntry(MobEntityRegister.SIX, 30, 1, 1),
-				new SpawnSettings.SpawnEntry(MobEntityRegister.SEVEN, 30, 1, 1),
-				new SpawnSettings.SpawnEntry(MobEntityRegister.EIGHT, 30, 1, 1),
-				new SpawnSettings.SpawnEntry(MobEntityRegister.NINE, 30, 1, 1),
-				new SpawnSettings.SpawnEntry(MobEntityRegister.TEN, 30, 1, 1));
-			}
-		}
-	}
+			if (biome.getCategory().equals(Biome.Category.DESERT)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.TWO, 8, 1, 1)); }
+
+			if (biome.getCategory().equals(Biome.Category.EXTREME_HILLS)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.THREE, 8, 1, 1)); }
+
+			if (biome.getCategory().equals(Biome.Category.FOREST)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.FOUR, 8, 1, 1)); }
+
+			if (biome.getCategory().equals(Biome.Category.ICY)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.FIVE, 8, 1, 1)); }
+
+			if (biome.getCategory().equals(Biome.Category.JUNGLE)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.SIX, 8, 1, 1)); }
+
+			if (biome.getCategory().equals(Biome.Category.MESA)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.SEVEN, 8, 1, 1)); }
+
+			if (biome.getCategory().equals(Biome.Category.PLAINS)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.PUMPKINCARVESYOU, 8, 1, 1)); }
+
+			if (biome.getCategory().equals(Biome.Category.RIVER)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.EIGHT, 8, 1, 1)); }
+
+			if (biome.getCategory().equals(Biome.Category.SAVANNA)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.NINE, 8, 1, 1)); }
+
+			if (biome.getCategory().equals(Biome.Category.SWAMP)) {
+				addMobSpawnToBiome(biome, SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(MobEntityRegister.TEN, 8, 1, 1)); }
+
+		} // End of for (Biome biome : BuiltinRegistries.BIOME){
+	} //End of AddSpawnEntries(){
 
 	public static void addMobSpawnToBiome(Biome biome, SpawnGroup classification,
 			SpawnSettings.SpawnEntry... spawnInfos) {

@@ -3,10 +3,10 @@
   "id": "monstermash",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Monster Mash",
   "description": "Monster Mash! Monster's mash items and poop resources!",
   "authors": [
-    "Dandin87/Trent87",
+    "Trent87",
     "The_Monster_Zero"
   ],
   "contact": {
@@ -35,5 +35,5 @@
   "suggests": {
     "flamingo": "*"
   },
-  "accessWidener" : "example.accesswidener"
+  "accessWidener" : "monstermash.accesswidener"
 }

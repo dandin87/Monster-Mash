@@ -9,6 +9,7 @@ import software.bernie.geckolib.animation.render.AnimatedModelRenderer;
 
 public class TenModel extends AnimatedEntityModel<TenEntity> {
 
+	private final AnimatedModelRenderer All;
 	private final AnimatedModelRenderer Body;
 	private final AnimatedModelRenderer LARM;
 	private final AnimatedModelRenderer Mouth;
@@ -23,8 +24,16 @@ public class TenModel extends AnimatedEntityModel<TenEntity> {
 	{
 		textureWidth = 256;
 		textureHeight = 256;
+		All = new AnimatedModelRenderer(this);
+		All.setRotationPoint(0.0F, 24.0F, 0.0F);
+		setRotationAngle(All, 0.0F, -1.5708F, 0.0F);
+
+		All.setModelRendererName("All");
+		this.registerModelRenderer(All);
+
 		Body = new AnimatedModelRenderer(this);
-		Body.setRotationPoint(0.0F, -16.0F, 0.0F);
+		Body.setRotationPoint(0.0F, -40.0F, 0.0F);
+		All.addChild(Body);
 		setRotationAngle(Body, 0.0F, 0.0F, 0.0F);
 		Body.setTextureOffset(80, 20).addBox(0.0F, 0.0F, -20.0F, 20.0F, 20.0F, 40.0F, 0.0F, false);
 		Body.setTextureOffset(80, 80).addBox(0.0F, -20.0F, -20.0F, 20.0F, 20.0F, 40.0F, 0.0F, false);
@@ -53,7 +62,8 @@ public class TenModel extends AnimatedEntityModel<TenEntity> {
 		this.registerModelRenderer(RARM);
 
 		RLEG = new AnimatedModelRenderer(this);
-		RLEG.setRotationPoint(8.0F, 14.0F, 15.0F);
+		RLEG.setRotationPoint(8.0F, -10.0F, 15.0F);
+		All.addChild(RLEG);
 		RLEG.setTextureOffset(80, 80).addBox(-5.0F, -10.0F, -5.0F, 10.0F, 10.0F, 10.0F, 0.0F, false);
 		RLEG.setModelRendererName("RLEG");
 		this.registerModelRenderer(RLEG);
@@ -66,7 +76,8 @@ public class TenModel extends AnimatedEntityModel<TenEntity> {
 		this.registerModelRenderer(RFOOT);
 
 		LLEG = new AnimatedModelRenderer(this);
-		LLEG.setRotationPoint(7.0F, 5.0F, -15.0F);
+		LLEG.setRotationPoint(7.0F, -19.0F, -15.0F);
+		All.addChild(LLEG);
 		LLEG.setTextureOffset(80, 20).addBox(-4.0F, -1.0F, -5.0F, 10.0F, 10.0F, 10.0F, 0.0F, false);
 		LLEG.setModelRendererName("LLEG");
 		this.registerModelRenderer(LLEG);
@@ -79,15 +90,13 @@ public class TenModel extends AnimatedEntityModel<TenEntity> {
 		this.registerModelRenderer(LFOOT);
 
 		Mouth2 = new AnimatedModelRenderer(this);
-		Mouth2.setRotationPoint(19.0F, -16.0F, 0.0F);
+		Mouth2.setRotationPoint(19.0F, -40.0F, 0.0F);
+		All.addChild(Mouth2);
 		Mouth2.setTextureOffset(0, 0).addBox(-39.0F, 0.0F, -20.0F, 20.0F, 20.0F, 40.0F, 0.0F, false);
 		Mouth2.setModelRendererName("Mouth2");
 		this.registerModelRenderer(Mouth2);
 
-		this.rootBones.add(Body);
-		this.rootBones.add(RLEG);
-		this.rootBones.add(LLEG);
-		this.rootBones.add(Mouth2);
+		this.rootBones.add(All);
 	}
 
 
