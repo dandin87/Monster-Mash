@@ -14,7 +14,7 @@
     "sources": "https://github.com/dandin87/MonsterMash"
   },
 
-  "license": "CC0-1.0",
+  "license": "GPLv3",
   "icon": "assets/monstermash/icon.png",
 
   "environment": "*",
@@ -30,7 +30,8 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.16.x",
+    "geckolib": "*"
   },
   "suggests": {
     "flamingo": "*"

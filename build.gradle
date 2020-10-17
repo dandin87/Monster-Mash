@@ -24,8 +24,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Gecko Lib
-	modImplementation "software.bernie.geckolib:${project.geckolib_version}:dev"
-	include "software.bernie.geckolib:${project.geckolib_version}"
+	modImplementation "software.bernie.geckolib:${project.geckolib_version}"
 }
 
 repositories {
